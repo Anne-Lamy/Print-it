@@ -37,7 +37,7 @@ function diaporamaImagePrecedente() {
 }
 
 function bannerActualise() {
-    for (i =0; i < slides.length; i++) {
+    for (let i =0; i < slides.length; i++) {
         const image = bannerImages[i];
         if (i === indexActuel) {
             image.style.display = 'block';
@@ -58,7 +58,6 @@ function bannerActualise() {
 }
 
     dotsContainer.innerHTML = '';
-
 
     slides.forEach((_, i) => { 
         const dot = document.createElement('div');
